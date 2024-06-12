@@ -1,0 +1,223 @@
+.converter-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.converter-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.converter-container button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.converter-container button:hover {
+    background-color: #45a049;
+}
+
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 45vw;
+    justify-content: start;
+}
+
+.tab {
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #a8aca5;
+    border: 1px solid #ccc;
+    color: #626e57;
+    font-weight: 500;
+    margin-right: 1px;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+}
+
+.tab input[type="text"] {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    background-color: transparent;
+    height: 5px;
+}
+
+.tab input[type="text"]:focus {
+    outline: none;
+}
+
+.tab.active {
+    background-color: #98ac86;
+    border-bottom: none;
+    color: #ffffff;
+}
+
+.tabContents {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+}
+
+.tab-content {
+    width: 100%;
+    height: 100%;
+    min-height: 55vh;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab.add-tab {
+    background-color: #a8aca5;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 3px 8px;
+}
+
+.tab .close-btn {
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2px 2px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.tab .close-btn:hover {
+    background-color: transparent;
+    color: rgb(238, 81, 18);
+}
+
+.tab-content textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 55vh;
+    padding: 10px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #566e57 0px 2px 8px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.tab-content textarea:focus {
+    outline: none;
+}
+
+.tab-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-actions button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.tab-actions button:hover {
+    background-color: #45a049;
+}
+
+.text-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    box-shadow: #566e57 0px 2px 8px;
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.text-actions input[type="number"] {
+    width: 50px;
+    outline: none;
+    border: none;
+    color: #4d4f50;
+    font-size: 18px;
+}
+
+.text-actions .box {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    border-left: #dbdddf 2px solid;
+}
+
+.text-actions .box button {
+    width: 40px;
+    padding: 8px 5px;
+    margin: 0 1px;
+    border: none;
+    background-color: transparent;
+    color: #4d4f50;
+    cursor: pointer;
+}
+
+.text-actions button {
+    width: 110px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.text-actions button:hover {
+    background-color: #e1ebe2;
+}
+
+.text-actions button:active, .text-actions button:hover  {
+    transform: scale(95%);
+    box-shadow: 2px 2px 5px #e1ebe2;
+}
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .tabs {
+        max-width: 100%;
+    }
+
+    .tab-content {
+        max-width: 90vw;
+    }
+}

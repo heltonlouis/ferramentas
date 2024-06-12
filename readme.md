@@ -1,0 +1,1 @@
+Um projeto pessoal para ajudar as pessoas com coisas simples de se fazer, como mudar a caixa do texto, fazer notas, um calendario personalizado, etc..

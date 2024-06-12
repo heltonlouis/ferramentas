@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtividade</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/notes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.11.1/sweetalert2.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Ferramentas de Produtividade</h1>
+      <div class="hello"></div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/notas.html">Notas</a></li>
+        <li><a href="/tarefas.html">Tarefas</a></li>
+        <li><a href="/calendario.html">Calendário</a></li>
+        <li><a href="/temporizador.html">Temporizador</a></li>
+        <li><a href="/conversores.html">Conversores</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="notes">
+        <div class="tabs" id="tabs"></div>
+        <div class="text-actions">
+          <input
+            type="number"
+            id="fontSizeInput"
+            value="12"
+            onchange="fontSizeChange()"
+          />
+          <div class="box">
+            <button type="button" onclick="fontBoldChange()">
+              <i class="fas fa-bold"></i>
+            </button>
+            <button type="button" onclick="fontItalicChange()">
+              <i class="fas fa-italic"></i>
+            </button>
+            <button type="button" onclick="fontUnderlineChange()">
+              <i class="fas fa-underline"></i>
+            </button>
+          </div>
+          <div class="box">
+            <button type="button" onclick="alignLeft()">
+              <i class="fas fa-align-left"></i>
+            </button>
+            <button type="button" onclick="alignCenter()">
+              <i class="fas fa-align-center"></i>
+            </button>
+            <button type="button" onclick="alignRight()">
+              <i class="fas fa-align-right"></i>
+            </button>
+          </div>
+          <div class="box">
+            <button
+              onclick="convertToUpperCase()"
+              title="Converter para MAIÚSCULAS"
+            >
+              AA
+            </button>
+
+            <button
+              onclick="convertToCapitalized() "
+              title="Converter para Capitalizado"
+            >
+              Aa
+            </button>
+            <button
+              onclick="convertToLowerCase()"
+              title="Converter para minúsculas"
+            >
+              aa
+            </button>
+          </div>
+          <div class="box">
+            <button type="button" onclick="fontSlashChange()">
+              <i class="fas fa-text-slash"></i>
+            </button>
+            <input type="color" onchange="fontColorChange(this)" />
+          </div>
+        </div>
+        <div id="tabContents"></div>
+      </section>
+
+      <section class="content">
+        <div class="ad-space">
+          <p>Espaço para Propaganda</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 produtividade. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="js/notes.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
